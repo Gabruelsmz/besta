@@ -19,6 +19,7 @@
         background-color: red;
         border: none;
         cursor: pointer;
+        margin-right: 10px;
     }
     #content {
         display: none;
@@ -35,12 +36,16 @@
     <div id="content">
         <img src="fera.jpg" alt="Image">
         <p style="color: white;" id="text">QUE GRUPO INCRIVEL</p>
-
-    </div>
+      <button onclick="redirectToInstagram()">jomvitu</button>        </div>
     <script>
         function showContent() {
             document.getElementById("content").style.display = "block";
         }
+
+        function redirectToInstagram() {
+            window.location.href = "https://www.instagram.com/jomvitu?igsh=MWhudnUxMmFzdTdhbA==";
+        }
+      
     </script>
 </body>
 </html>
