@@ -32,20 +32,22 @@
 </style>
 </head>
 <body>
-    <button onclick="showContent()">Clique no botão</button>
+    <button onclick="showContent(); this.style.display = 'none'">Clique no botão</button>
     <div id="content">
         <img src="fera.jpg" alt="Image">
         <p style="color: white;" id="text">QUE GRUPO INCRIVEL</p>
-      <button onclick="redirectToInstagram()">jomvitu</button>        </div>
+        <button onclick="redirectToInstagram()">jomvitu</button>
+        <button onclick="redirectToInstagram('https://www.instagram.com/roberto_o.o?igsh=eHJzazZzd29pY2xr=Botao1')">Roberto</button>
+        <button onclick="redirectToInstagram('https://www.instagram.com/_gabis_sm?igsh=MWJ6cjB4eWk0MTY0Yg===Botao2')">Gabriel</button>
+    </div>
     <script>
         function showContent() {
             document.getElementById("content").style.display = "block";
         }
 
-        function redirectToInstagram() {
-            window.location.href = "https://www.instagram.com/jomvitu?igsh=MWhudnUxMmFzdTdhbA==";
+        function redirectToInstagram(instagramLink) {
+            window.location.href = instagramLink;
         }
-      
     </script>
 </body>
 </html>
